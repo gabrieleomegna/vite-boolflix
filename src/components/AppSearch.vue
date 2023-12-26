@@ -1,7 +1,7 @@
 <template>
     <div class="container py-5 text-center">
         <input type="text" name="input-movies-search" id="input-movies-search" v-model="searchedString" @keyup.enter="store.getMovies(searchedString)">
-        <button id="button-movies-search">Invia</button>
+        <button id="button-movies-search" @click="store.getMovies(searchedString)">Invia</button>
     </div>
 </template>
 <script>
