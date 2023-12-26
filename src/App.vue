@@ -1,10 +1,20 @@
 <script>
+    import AppMain from './components/AppMain.vue';
+    import AppSearch from './components/AppSearch.vue';
+    import AppHeader from './components/AppHeader.vue';
+    export default {
+      components: {
+        AppHeader,
+        AppMain,
+        AppSearch
+      }
+    }
 </script>
 
 <template>
-  <div>
-    Ciao
-  </div>
+  <AppHeader/>
+  <AppSearch/>
+  <AppMain/>
 </template>
 
 <style lang="scss">
